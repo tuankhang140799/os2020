@@ -10,5 +10,5 @@ Student Info
 =========================
 
 * Student Name: *Le Tuan Khang*
-* Student ID: *BI8-081* 
+* Student ID: *BI8-081*
 
