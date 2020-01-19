@@ -1,0 +1,72 @@
+echo Le Tuan Khang Bi8-081
+echo Practical work 1
+
+ubuntu@ubuntu:~$ echo hello world
+hello world
+
+ubuntu@ubuntu:~$ passwd
+Changing password for ubuntu.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+Password unchanged
+Enter new UNIX password: 
+Retype new UNIX password: 
+Sorry, passwords do not match
+passwd: Authentication token manipulation error
+passwd: password unchanged
+
+ubuntu@ubuntu:~$ date
+Sun Jan 19 22:51:26 +07 2020
+
+ubuntu@ubuntu:~$ hostname
+ubuntu
+
+ubuntu@ubuntu:~$ arch
+x86_64
+
+ubuntu@ubuntu:~$ uname -a
+Linux ubuntu 5.0.0-23-generic #24~18.04.1-Ubuntu SMP Mon Jul 29 16:12:28 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+ubuntu@ubuntu:~$ dmesg
+[10707.023679] e1000: enp0s3 NIC Link is Down
+[10707.023953] e1000 0000:00:03.0 enp0s3: Reset adapter
+[10707.403594] usb 1-1: new full-speed USB device number 4 using ohci-pci
+[10708.599282] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+[10708.599284] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+[10708.599286] usb 1-1: Product: USB Tablet
+[10708.599300] usb 1-1: Manufacturer: VirtualBox
+[10708.823964] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0003/input/input9
+[10708.888931] hid-generic 0003:80EE:0021.0003: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+[10709.110657] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+
+ubuntu@ubuntu:~$ uptime
+ 22:51:48 up  3:00,  1 user,  load average: 0.11, 0.13, 0.10
+
+ubuntu@ubuntu:~$ whoami
+ubuntu
+
+ubuntu@ubuntu:~$ who am i
+
+ubuntu@ubuntu:~$ who
+ubuntu   :0           2020-01-19 19:59 (:0)
+
+ubuntu@ubuntu:~$ id
+uid=999(ubuntu) gid=999(ubuntu) groups=999(ubuntu),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+
+ubuntu@ubuntu:~$ last
+ubuntu   :0           :0               Sun Jan 19 19:59   still logged in
+reboot   system boot  5.0.0-23-generic Sun Jan 19 19:48   still running
+
+wtmp begins Sun Jan 19 19:48:06 2020
+
+ubuntu@ubuntu:~$ finger
+
+Command 'finger' not found, but can be installed with:
+
+sudo apt install finger
+
+ubuntu@ubuntu:~$ w
+ 22:52:12 up  3:00,  1 user,  load average: 0.07, 0.12, 0.09
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+ubuntu   :0       :0               19:59   ?xdm?   1:16   0.01s /usr/lib/gdm3/
