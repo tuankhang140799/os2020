@@ -1,0 +1,44 @@
+echo Le Tuan Khang BI8-081
+echo Practical work 3
+
+echo 1)List all running process
+ubuntu@ubuntu:~$ ps man
+ PID TTY      STAT   TIME COMMAND
+ 4046 tty1     -      0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_S
+    - -        Ssl+   0:00 -
+    - -        Ssl+   0:00 -
+    - -        Ssl+   0:00 -
+ 4048 tty1     -      1:20 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/
+    - -        Sl+    1:13 -
+    - -        Sl+    0:00 -
+    - -        Sl+    0:00 -
+    - -        Sl+    0:00 -
+    - -        Sl+    0:00 -
+    - -        Sl+    0:06 -
+ 4060 tty1     -      0:00 /usr/lib/gnome-session/gnome-session-binary --sessio
+    - -        Sl+    0:00 -
+    - -        Sl+    0:00 -
+    - -        Sl+    0:00 -
+    - -        Sl+    0:00 -
+
+echo 2)Start new process
+ubuntu@ubuntu:~$ gnome-calculator
+ 
+echo 3)Find process id
+ubuntu@ubuntu:~$ ps man | grep gnome-calculator
+ 9990 pts/0    -      0:00 grep --color=auto gnome-calculator
+
+echo 4)Show process status
+ubuntu@ubuntu:~$ cat /proc/9990/status
+State: S (sleeping)
+
+echo 5)Pause process
+ubuntu@ubuntu:~$ kill -s STOP 9990
+
+echo 6)Resume process
+ubuntu@ubuntu:~$ kill -s CONT 9990
+
+echo 7)Terminate process
+ubuntu@ubuntu:~$ kill -s KILL 9990
+
+
