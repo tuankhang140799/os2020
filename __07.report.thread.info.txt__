@@ -1,0 +1,8 @@
+ubuntu@ubuntu:~$ ps aux | grep -i firefox
+ubuntu   11278 56.5  4.4 2936620 233816 tty1   Sl+  14:06   0:11 /usr/lib/firefox/firefox -new-window
+ubuntu   11335 13.8  2.9 2642044 155696 tty1   Sl+  14:06   0:02 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 180860 -parentBuildID 20190718161435 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 11278 true tab
+
+ubuntu@ubuntu:~$ ps -o nlwp 11278
+NLWP
+  59
+
