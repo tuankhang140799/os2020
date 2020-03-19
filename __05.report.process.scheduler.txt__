@@ -1,0 +1,17 @@
+ubuntu@ubuntu:~$ grep systemd /proc/sched_debug
+ S  systemd-udevd  1011      3293.159155      1698   120         0.000000      1045.857057         0.000000 0 0 /autogroup-15
+ S        systemd  1514       445.031284       881   120         0.000000       829.577045         0.000000 0 0 /autogroup-72
+ Ssystemd-resolve  1048       434.756149      6361   120         0.000000      2056.297405         0.000000 0 0 /autogroup-24
+ S systemd-logind  1076       175.071640     20780   120         0.000000       558.569778         0.000000 0 0 /autogroup-40
+ S        systemd     1      1788.869035    103108   120         0.000000     
+
+ubuntu@ubuntu:~$ grep switch /proc/1011/sched
+nr_switches                                  :                 1699
+nr_voluntary_switches                        :                  942
+nr_involuntary_switches                      :                  757
+
+ubuntu@ubuntu:~$ grep switch /proc/1514/sched
+nr_switches                                  :                  881
+nr_voluntary_switches                        :                  816
+nr_involuntary_switches                      :                   65
+
